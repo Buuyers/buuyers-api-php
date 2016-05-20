@@ -28,6 +28,6 @@ $client->post([
     'date'=>xxxx-xx-xx, // Date to send
     'time'=>xx, // Time to send
     'name'=>xxxx, // Name (optional parameter)
-    'resend'=>xxxx-xx-xx, // Date to send
+    'resend'=>xxxx-xx-xx, // Date to send (optional parameter)
 ]);
 ```
