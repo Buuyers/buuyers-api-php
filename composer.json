@@ -2,7 +2,6 @@
     "name": "buuyers/buuyers-api-php",
     "description": "Buuyers API client built on top of Guzzle",
     "keywords": ["Buuyers", "api", "guzzle"],
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Buuyers Platform Team",
