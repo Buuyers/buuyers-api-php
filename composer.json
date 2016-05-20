@@ -1,0 +1,20 @@
+{
+    "name": "buuyers/buuyers-api-php",
+    "description": "Buuyers API client built on top of Guzzle",
+    "keywords": ["Buuyers", "api", "guzzle"],
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Buuyers Platform Team",
+            "email": "api@buuyers.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Buuyers\\": ["src"]
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}
