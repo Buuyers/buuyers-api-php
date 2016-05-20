@@ -9,7 +9,7 @@ use function GuzzleHttp\Psr7\stream_for;
 class EmailingCampaign
 {
     /** @var url $url_api */
-    private $url_api="http://buuyers.dev/api/v1/emailing-campaign";
+    private $url_api="https://www.buuyers.com/api/v1/emailing-campaign";
 
     /** @var Client $http_client */
     private $http_client;
