@@ -10,7 +10,7 @@ class BuuyersClient
 {
 
     /** @var url $url_api */
-    private $url_api = "http://buuyers.dev/api/v1/";
+    private $url_api = "https://www.buuyers.com/api/v1/";
 
     /** @var Client $http_client */
     private $http_client;
