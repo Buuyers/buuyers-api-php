@@ -21,13 +21,14 @@ $client = new EmailingCampaign(appId, apiKey);
 ## Emailing Campaign
 
 ```php
-$client->post([
+$client->emailingCampaigns->campaigns([
     'company_id'=>xxx, // Id company
     'email'=>xxx@yopmail.com, // Email
     'type'=>'feedback', // feedback or avis
     'date'=>xxxx-xx-xx, // Date to send
     'time'=>xx, // Time to send
     'name'=>xxxx, // Name (optional parameter)
-    'resend'=>xxxx-xx-xx, // Date to send (optional parameter)
+    'resend'=>xxxx-xx-xx, // Date to send (optional parameter),
+    'products'=>[], // Array of Products
 ]);
 ```
