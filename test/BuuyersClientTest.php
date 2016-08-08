@@ -27,20 +27,19 @@ class BuuyersClientTest extends TestCase
 
         $http_client = new Client(['handler' => $stack]);
 
-        $client = new BuuyersClient('app_key', 'api_key');
+        $client = new BuuyersClient('u', 'p');
         $client->setClient($http_client);
 
         $client->companies->getCompany(1);
 
         foreach ($container as $transaction) {
             $basic = $transaction['request']->getHeaders()['Authorization'][0];
-            $this->assertTrue($basic == "Basic YXBwX2tleTphcGlfa2V5");
+            $this->assertTrue($basic == "Basic dTpw");
             $method = $transaction['request']->getMethod();
             $this->assertEquals($method, 'GET');
             //> GET
             if ($transaction['response']) {
                 $statusCode = $transaction['response']->getStatusCode();
-                var_dump($statusCode);
                 $this->assertEquals(200, $statusCode);
                 //> 200, 200
             } elseif ($transaction['error']) {

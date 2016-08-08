@@ -15,13 +15,20 @@ class BuuyersCompanies
     public function getCompany($id)
     {
         $path = $this->companiesPath($id);
-        return $this->client->get($path,[]);
+        return $this->client->get($path, []);
     }
 
     public function getCompanyReviews($id)
     {
         $path = $this->companiesReviewsPath($id);
-        return $this->client->get($path);
+        return $this->client->get($path, []);
+    }
+
+
+    public function addReview($options)
+    {
+        $path = $this->companiesAddReviews();
+        return $this->client->post($path, $options);
     }
 
 
@@ -34,4 +41,10 @@ class BuuyersCompanies
     {
         return "companies/" . $id . "/reviews";
     }
+
+    public function companiesAddReviews()
+    {
+        return "add-review";
+    }
+
 }
