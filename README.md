@@ -7,7 +7,7 @@ Using Composer:
 ```json
 {
     "require": {
-      "buuyers/buuyers-api-php": "2.1.0"
+      "buuyers/buuyers-api-php": "2.3.0"
     }
 }
 ```

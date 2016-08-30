@@ -3,8 +3,8 @@
 namespace Buuyers;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Response;
-use function GuzzleHttp\Psr7\stream_for;
 
 class BuuyersClient
 {
@@ -83,7 +83,7 @@ class BuuyersClient
 
     private function handleResponse(Response $response)
     {
-        $stream = stream_for($response->getBody());
+        $stream = Psr7\stream_for($response->getBody());
         $data = json_decode($stream->getContents());
         return $data;
     }
